@@ -4,7 +4,7 @@ import { FaLinux, FaJs, FaCode } from "react-icons/fa";
 const BOOTSTRAP_FOR_SKILL_ICON = "text-4xl mx-auto inline-block";
 const data = {
   name: "Jamie Grimwood",
-  title: "Backend Developer",
+  title: "Fullstack Developer",
   social: {
     github: "https://github.com/JamieGrimwood",
     email: "jamie@jmgcoding.com",
