@@ -12,11 +12,11 @@ const data = {
   about: {
     title: "About Me",
     description:
-      "I am a Backend Developer that owns Votion Development (https://votion.dev), and I am one of the founders of ColourNodes (https://colournodes.com).",
+      "I am a Fullstack Developer that owns Votion Development (https://votion.dev), and I am the founder of FalconHosting (https://falconhosting.co.uk).",
   },
   skills: [
     {
-      skillName: "Backend",
+      skillName: "Fullstack",
       skillIcon: <FaCode className={BOOTSTRAP_FOR_SKILL_ICON} />,
     },
     {
