@@ -74,6 +74,7 @@ export default function Home() {
           </div>
           <div className="flex items-center justify-center">
             <Button className="w-48" onClick={() => navigate('/projects')}>Check out my projects</Button>
+            <Button className="w-48 ml-4" onClick={() => window.open("https://www.buymeacoffee.com/JamieGrimwood")}>Support my work</Button>
           </div>
         </Card>
         <div className="h-96 sm:h-screen mt-4 mb-4">
