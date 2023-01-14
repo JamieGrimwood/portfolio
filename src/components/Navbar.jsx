@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom';
 
 export default function NavbarComponent() {
     const location = useLocation()
-    
+
     return (
         <div className="dark">
             <Navbar fluid={true} rounded={true}>
@@ -30,6 +30,11 @@ export default function NavbarComponent() {
                     <Link to='/projects'>
                         <Navbar.Link active={location.pathname == "/projects"}>
                             Projects
+                        </Navbar.Link>
+                    </Link>
+                    <Link to='/shows-and-gigs'>
+                        <Navbar.Link active={location.pathname == "/shows-and-gigs"}>
+                            Shows and Gigs
                         </Navbar.Link>
                     </Link>
                 </Navbar.Collapse>
