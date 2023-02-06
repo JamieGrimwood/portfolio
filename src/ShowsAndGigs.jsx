@@ -90,7 +90,7 @@ export default function ShowsAndGigs() {
                     <source src="/performances/6EB53089-B3CE-4C59-9332-5EBDE7544F0A.MP4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
-                  <a className="text-white w-64 mt-4">In this video, I got the chance to watch the tech run of the group of dancers I was with. I also met with the technicians up top (where I was standing filming the video) and got to meet them and see how their equipment works and what they use.</a>
+                  <a className="text-white w-64 mt-4">In this video, I got the chance to watch the tech run of the group of dancers I was with. I also met with the technicians up top (where I was standing filming the video) and got to meet them and see how their equipment works and what they use. We had a great chat and they showed some equipment in action to me.</a>
                 </div>
               </div>
               <div className="h-64">
@@ -160,7 +160,7 @@ export default function ShowsAndGigs() {
                     <source src="/performances/IMG_0085.MP4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
-                  <a className="text-white w-96">In this video, I got to watch the dance group I was with do their pre-show rehersal.</a>
+                  <a className="text-white w-96 mt-4">In this video, I got to watch the dance group I was with do their pre-show rehersal. This is after meeting with the technicians.</a>
                 </div>
               </div>
               <div>
@@ -195,7 +195,7 @@ export default function ShowsAndGigs() {
                     <source src="/performances/94F6B965-4B87-421A-B360-0D8136779BD7.MP4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
-                  <a className="text-white w-64 mt-4">In this video, I was with my schools studio technician in the old tech booth at the back of the theatre, and got to listen on the XLR PA system for the technicians and backstage.</a>
+                  <a className="text-white w-64 mt-4">In this video, I was with my schools studio technician in the old tech booth at the back of the theatre, and got to listen on the XLR PA system for the technicians and backstage. I was able to watch how the technicians did their job and see the equipments full potential during a live show.</a>
                 </div>
               </div>
             </div>

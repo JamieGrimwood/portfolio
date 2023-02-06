@@ -9,7 +9,7 @@ export default function Home() {
       <div className="flex flex-col justify-center items-center text-center">
         <div className="flex flex-col">
           <h1 className="text-4xl font-bold text-white fadein-text">Hi, I'm Jamie <span className="wave">👋🏻</span></h1>
-          <a className="text-xl text-white fadein-subtext">A fullstack developer & System Administrator from the UK.</a>
+          <a className="text-xl text-white fadein-subtext">I'm a fullstack developer & System Administrator from the UK.</a>
           <p className="text-xl text-white fadein-subtext">I also do a lot of Technical Theatre on the side.</p>
           <p className="text-xl text-white fadein-subtext">Founder & Company Director of <span className="text-blue-500 cursor-pointer underline" onClick={() => window.open("https://falconhosting.co.uk")}>FalconHosting.co.uk</span></p>
         </div>
