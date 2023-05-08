@@ -78,6 +78,18 @@ export default function Home() {
             <Button className="w-48 ml-4" onClick={() => window.open("https://www.buymeacoffee.com/JamieGrimwood")}>Support my work</Button>
           </div>
         </Card>
+        <Card className="flex items-center justify-center mt-4">
+          <a
+            href="https://www.abuseipdb.com/user/113395"
+            title="AbuseIPDB is an IP address blacklist for webmasters and sysadmins to report IP addresses engaging in abusive behavior on their networks"
+          >
+            <img
+              src="https://www.abuseipdb.com/contributor/113395.svg"
+              alt="AbuseIPDB Contributor Badge"
+              style={{ width: 401 }}
+            />
+          </a>
+        </Card>
         <div className="h-96 sm:h-screen mt-4 mb-4">
           <div className="flex flex-col text-center mb-4">
             <a className="text-white text-4xl font-bold">Recent Shows</a>
