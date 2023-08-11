@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background-color: black;
-}
-
 .circles {
   position: absolute;
   top: 0;
@@ -107,11 +103,18 @@ body {
 
 
 @keyframes animate {
-
   0% {
     transform: translateY(0) rotate(0deg);
-    opacity: 1;
+    opacity: 0;
     border-radius: 0;
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 1;
   }
 
   100% {
@@ -119,5 +122,4 @@ body {
     opacity: 0;
     border-radius: 50%;
   }
-
 }
