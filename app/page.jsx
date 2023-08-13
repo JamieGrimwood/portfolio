@@ -32,7 +32,7 @@ export default function Home() {
             ?
             <div className="flex flex-col items-center justify-center text-center h-screen">
                 <h1 className="text-4xl font-bold">Woah there</h1>
-                <p className="mx-2">Be careful, as this website is NOT optimised for mobile devices yet. If you wish to proceed, click the button below, but won't be a nice experience. Use a desktop or laptop for the best experience.</p>
+                <p className="mx-2">Be careful, as this website is NOT optimised for mobile devices yet. If you wish to proceed, click the button below, but won&apos;t be a nice experience. Use a desktop or laptop for the best experience.</p>
                 <button className="relative inline-block text-lg group mt-4" onClick={() => setIsBrowser(true)}>
                     <span className="relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white">
                         <span className="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-gray-50"></span>
@@ -65,7 +65,7 @@ export default function Home() {
                 <div className="flex flex-col items-center text-center bg-white sm:mx-32 mb-16" id="about">
                     <h1 className="text-6xl">About Me</h1>
                     <p className="max-w-[500px] mt-4">
-                        Hey! I'm Jamie Grimwood, a 15 year old fullstack web developer and volunteer theatre technician (at the moment). I love music, computer science, and most things techy.
+                        Hey! I&apos;m Jamie Grimwood, a 15 year old fullstack web developer and volunteer theatre technician (at the moment). I love music, computer science, and most things techy.
                     </p>
                     <h2 className="text-4xl mt-16">Scouting</h2>
                     <div className="flex flex-col gap-8 mt-4">
@@ -183,7 +183,7 @@ export default function Home() {
                     <div className="flex items-center justify-center text-center mt-4">
                         <p className="max-w-[800px]">
                             Programming has been a massive part of my life since I was about 12, when I started making Minecraft plugins for my Minecraft server at the time. That then evolved into joining a mod creation group and helping with a few. After this, I eventually found my love for Web Development.
-                            Every since, I have been focused on that, using tools such as <a href="https://nextjs.org" className="text-blue-500 underline">Next.JS</a>, <a href="https://react.dev/" className="text-blue-500 underline">React.JS</a> and <a href="https://tailwindcss.com/" className="text-blue-500 underline">TailwindCSS</a> for frontend development. For backend, I have focused on <a href="https://github.com/kartikk221/hyper-express" className="text-blue-500 underline">HyperExpress</a> due to it's performance using <a href="https://github.com/uNetworking/uWebSockets.js/" className="text-blue-500 underline">uWebSockets.js</a>.
+                            Every since, I have been focused on that, using tools such as <a href="https://nextjs.org" className="text-blue-500 underline">Next.JS</a>, <a href="https://react.dev/" className="text-blue-500 underline">React.JS</a> and <a href="https://tailwindcss.com/" className="text-blue-500 underline">TailwindCSS</a> for frontend development. For backend, I have focused on <a href="https://github.com/kartikk221/hyper-express" className="text-blue-500 underline">HyperExpress</a> due to its performance using <a href="https://github.com/uNetworking/uWebSockets.js/" className="text-blue-500 underline">uWebSockets.js</a>.
                         </p>
                     </div>
                     <h2 className="text-4xl mt-16">Projects</h2>
