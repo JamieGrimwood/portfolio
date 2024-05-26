@@ -6,6 +6,7 @@ import HomePage from './pages/HomePage';
 import TerminalPage from './pages/TerminalPage';
 
 import './css/globals.css';
+import '@fontsource-variable/montserrat';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <BrowserRouter>

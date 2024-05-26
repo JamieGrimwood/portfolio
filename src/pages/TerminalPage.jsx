@@ -22,40 +22,50 @@ export default function TerminalPage() {
             terminal.options.cursorBlink = true;
         };
 
-        let ctrlDown = false
+        let ctrlDown = false;
 
         const handleControlDown = (event) => {
             if (event.code === "ControlLeft") {
-                ctrlDown = true
+                ctrlDown = true;
             }
         };
         window.addEventListener('keydown', handleControlDown);
 
         const handleControlUp = (event) => {
             if (event.code === "ControlLeft") {
-                ctrlDown = true
+                ctrlDown = true;
             }
         };
         window.addEventListener('keyup', handleControlUp);
 
-        let cmd = ''
+        let cmd = '';
 
         const executeCommand = (command) => {
-            terminal.write("\n\r")
-            if (command === "ls") {
-                terminal.write(`Sadly, this isn't a VPS or VM, but if you would like a high-performance one for cheap, I would check out ${chalk.underline('https://falconhosting.co.uk')} 😉`)
+            let args = command.split(' ');
+            terminal.write("\n\r");
+            if (args[0] === "ls") {
+                terminal.write(`Sadly, this isn't a VPS or VM, but if you would like a high-performance one for a good price, I would check out ${chalk.underline('https://falconhosting.co.uk')} 😉`);
+            } else if (args[0] === "help") {
+                terminal.write(`
+                Commands that currently work:
+                
+                • help - Shows this menu
+                • echo - Echos text
+                `);
+            } else if (args[0] === "echo") {
+                args.shift();
+                terminal.write(args.join(' '));
             } else {
-                terminal.write("Command not found, please type \"help\" for help.")
+                terminal.write("Command not found, please type \"help\" for help.");
             }
-            console.log(command)
         }
 
         terminal.onKey(key => {
             const char = key.domEvent.key;
             if (char === "Enter") {
-                executeCommand(cmd)
-                cmd = ''
-                terminal.prompt()
+                executeCommand(cmd);
+                cmd = '';
+                terminal.prompt();
             } else if (char === "Backspace") {
                 if (terminal._core.buffer.x > 2) {
                     cmd = cmd.substring(0, cmd.length - 1);
@@ -65,8 +75,8 @@ export default function TerminalPage() {
                 return;
             } else if (char === "c") {
                 if (ctrlDown === true) {
-                    cmd = ''
-                    terminal.prompt()
+                    cmd = '';
+                    terminal.prompt();
                 } else {
                     cmd += char;
                     terminal.write(char);
@@ -93,7 +103,7 @@ export default function TerminalPage() {
 
         const loadingInterval = setInterval(async () => {
             const frame = frames[index];
-            terminal.write('\x1b[2K\r')
+            terminal.write('\x1b[2K\r');
             terminal.write(`${frame} Loading JMGCoding Terminal...`);
             index = (index + 1) % frames.length;
         }, 80);
@@ -121,7 +131,7 @@ export default function TerminalPage() {
 `;
 
             writeAsciiArt(asciiArt);
-            terminal.write("Hello, and welcome to the JMGCoding.com Terminal. Here, you can explore my projects and experiences, and also run useful and fun commands!\n\n")
+            terminal.write("Hello, and welcome to the JMGCoding.com Terminal. Here, you can explore my projects and experiences, and also run useful and fun commands!\n\n");
             terminal.prompt();
         }, 3000)
 
@@ -135,8 +145,8 @@ export default function TerminalPage() {
     }, [])
 
     return (
-        <div style={{ width: '100%', height: '100vh' }}>
-            <div className="terminal" style={{ width: '100%', height: '100%' }}></div>
+        <div className="w-full h-screen bg-black">
+            <div className="terminal w-full h-full"></div>
         </div>
     )
 }
