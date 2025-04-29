@@ -1,8 +1,0 @@
-.terminal-background {
-    margin: 0;
-    background-color: black;
-}
-
-.xterm .xterm-screen canvas {
-    border-right: 1px solid transparent;
-}
